@@ -28,12 +28,12 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
 					<goal>install</goal>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 	<scm>
 		<developerConnection>scm:git:git@github.com:vpnjain1991/pet-clinic.git</developerConnection>
-	  <tag>pet-clinic-0.0.1</tag>
   </scm>
 </project>
