@@ -1,15 +1,13 @@
 package com.spring.petclinic.services;
 
-import com.spring.petclinic.model.Owner;
-
 import java.util.Set;
 
 public interface CrudService<T, ID> {
     Set<T> findAll();
 
-    T findById();
+    T findById(ID id);
 
-    T save(T object);
+    T save(ID id, T object);
 
     void delete(T object);
 
