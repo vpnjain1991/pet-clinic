@@ -1,10 +1,9 @@
 package com.springframework.petclinic.bootstrap;
 
-import com.spring.petclinic.model.Owner;
-import com.spring.petclinic.model.Pet;
-import com.spring.petclinic.model.Vet;
-import com.spring.petclinic.services.OwnerService;
-import com.spring.petclinic.services.VetService;
+import com.springframework.petclinic.model.Owner;
+import com.springframework.petclinic.model.Vet;
+import com.springframework.petclinic.services.OwnerService;
+import com.springframework.petclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

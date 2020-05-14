@@ -1,8 +1,6 @@
-package com.spring.petclinic.services;
+package com.springframework.petclinic.services;
 
-import com.spring.petclinic.model.Owner;
-
-import java.util.Set;
+import com.springframework.petclinic.model.Owner;
 
 public interface OwnerService extends CrudService<Owner, Long> {
     Owner findByLastName(String lastName);
