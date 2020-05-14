@@ -2,10 +2,11 @@ package com.springframework.petclinic.services.map;
 
 import com.springframework.petclinic.model.Pet;
 import com.springframework.petclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-//@Service
+@Service
 public class PetServiceMapImpl extends AbstractMapService<Pet, Long> implements PetService {
     public Set<Pet> findAll() {
         return super.findAll();
@@ -16,7 +17,7 @@ public class PetServiceMapImpl extends AbstractMapService<Pet, Long> implements 
     }
 
     public Pet save(Pet object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     public void delete(Pet object) {
