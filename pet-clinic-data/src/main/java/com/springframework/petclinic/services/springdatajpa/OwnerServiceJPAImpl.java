@@ -39,8 +39,7 @@ public class OwnerServiceJPAImpl implements OwnerService {
 
     @Override
     public Owner findById(Long id) {
-        Optional<Owner> ownerOptional = ownerRepository.findById(id);
-        return ownerOptional.orElse(null);
+        return ownerRepository.findById(id).orElse(null);
     }
 
     @Override
