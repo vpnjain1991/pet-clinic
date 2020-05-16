@@ -3,7 +3,6 @@ package com.springframework.petclinic.services.springdatajpa;
 import com.springframework.petclinic.model.PetType;
 import com.springframework.petclinic.repositories.PetTypeRepository;
 import com.springframework.petclinic.services.PetTypeService;
-import com.sun.org.apache.xpath.internal.objects.XObject;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 

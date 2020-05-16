@@ -1,28 +1,17 @@
 package com.springframework.petclinic.model;
 
+import lombok.*;
+
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
+@Setter
+@Getter
+@NoArgsConstructor
 public class Person extends BaseEntity{
     private String firstName;
     private String lastName;
 
-    public Person() {
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public Person(Long id, String firstName, String lastName) {
     }
 }
