@@ -16,7 +16,7 @@ import java.time.LocalDate;
 @Setter
 @Getter
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = true, onlyExplicitlyIncluded = true)
 public class Visit extends BaseEntity{
     private LocalDate date;
     private String description;

@@ -11,7 +11,7 @@ import javax.persistence.MappedSuperclass;
 @Setter
 @Getter
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = true, onlyExplicitlyIncluded = true)
 public class Person extends BaseEntity{
     private String firstName;
     private String lastName;

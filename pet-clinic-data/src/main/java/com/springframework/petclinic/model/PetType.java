@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @Setter
 @Getter
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = true, onlyExplicitlyIncluded = true)
 public class PetType extends BaseEntity{
     private String name;
 

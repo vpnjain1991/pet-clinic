@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @Setter
 @Getter
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = true, onlyExplicitlyIncluded = true)
 public class Speciality extends BaseEntity{
     private String description;
 
