@@ -14,8 +14,6 @@ import java.util.Set;
 @Setter
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
-@Builder
 public class Owner extends Person{
     private String address;
     private String city;
