@@ -1,6 +1,9 @@
 package com.springframework.petclinic.model;
 
-import lombok.*;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -12,8 +15,7 @@ import java.util.Set;
 @Setter
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
-@Builder
+@EqualsAndHashCode(callSuper = true)
 public class Pet extends BaseEntity{
     @ManyToOne
     @JoinColumn(name = "type_id")
@@ -27,4 +29,12 @@ public class Pet extends BaseEntity{
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
     private Set<Visit> visits = new HashSet<>();
+
+    public Pet(Long id, Owner owner, LocalDate birthDate, String name, Set<Visit> visits) {
+        super(id);
+        this.owner = owner;
+        this.birthDate = birthDate;
+        this.name = name;
+        this.visits = visits;
+    }
 }

@@ -14,6 +14,7 @@ import java.util.Set;
 @Setter
 @Getter
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 public class Owner extends Person{
     private String address;
     private String city;
